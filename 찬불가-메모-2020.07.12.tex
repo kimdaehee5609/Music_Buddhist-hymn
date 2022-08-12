@@ -1,0 +1,454 @@
+%	-------------------------------------------------------------------------------
+%
+%		2020년 7월 12일 첫 작업
+%
+%
+%
+%
+%
+%
+%	-------------------------------------------------------------------------------
+
+%\documentclass[10pt,xcolor=pdftex,dvipsnames,table]{beamer}
+%\documentclass[10pt,blue,xcolor=pdftex,dvipsnames,table,handout]{beamer}
+%\documentclass[14pt,blue,xcolor=pdftex,dvipsnames,table,handout]{beamer}
+\documentclass[aspectratio=1610,17pt,xcolor=pdftex,dvipsnames,table,handout]{beamer}
+
+		% Font Size
+		%	default font size : 11 pt
+		%	8,9,10,11,12,14,17,20
+		%
+		% 	put frame titles 
+		% 		1) 	slideatop
+		%		2) 	slide centered
+		%
+		%	navigation bar
+		% 		1)	compress
+		%		2)	uncompressed
+		%
+		%	Color
+		%		1) blue
+		%		2) red
+		%		3) brown
+		%		4) black and white	
+		%
+		%	Output
+		%		1)  	[default]	
+		%		2)	[handout]		for PDF handouts
+		%		3) 	[trans]		for PDF transparency
+		%		4)	[notes=hide/show/only]
+
+		%	Text and Math Font
+		% 		1)	[sans]
+		% 		2)	[sefif]
+		%		3) 	[mathsans]
+		%		4)	[mathserif]
+
+
+		%	---------------------------------------------------------	
+		%	슬라이드 크기 설정 ( 128mm X 96mm )
+		%	---------------------------------------------------------	
+%			\setbeamersize{text margin left=2mm}
+%			\setbeamersize{text margin right=2mm}
+
+	%	========================================================== 	Package
+		\usepackage{kotex}						% 한글 사용
+		\usepackage{amssymb,amsfonts,amsmath}	% 수학 수식 사용
+		\usepackage{color}					%
+		\usepackage{colortbl}					%
+
+
+	%		========================================================= 	note 옵션인 
+	%			\setbeameroption{show only notes}
+		
+
+	%		========================================================= 	Theme
+
+		%	---------------------------------------------------------	
+		%	전체 테마
+		%	---------------------------------------------------------	
+		%	테마 명명의 관례 : 도시 이름
+%			\usetheme{default}			%
+%			\usetheme{Madrid}    		%
+%			\usetheme{CambridgeUS}    	% -red, no navigation bar
+%			\usetheme{Antibes}			% -blueish, tree-like navigation bar
+
+		%	----------------- table of contents in sidebar
+			\usetheme{Berkeley}		% -blueish, table of contents in sidebar
+									% 개인적으로 마음에 듬
+
+%			\usetheme{Marburg}			% - sidebar on the right
+%			\usetheme{Hannover}		% 왼쪽에 마크
+%			\usetheme{Berlin}			% - navigation bar in the headline
+%			\usetheme{Szeged}			% - navigation bar in the headline, horizontal lines
+%			\usetheme{Malmoe}			% - section/subsection in the headline
+
+%			\usetheme{Singapore}
+%			\usetheme{Amsterdam}
+
+		%	---------------------------------------------------------	
+		%	색 테마
+		%	---------------------------------------------------------	
+%			\usecolortheme{albatross}	% 바탕 파란
+%			\usecolortheme{crane}		% 바탕 흰색
+%			\usecolortheme{beetle}		% 바탕 회색
+%			\usecolortheme{dove}		% 전체적으로 흰색
+%			\usecolortheme{fly}		% 전체적으로 회색
+%			\usecolortheme{seagull}	% 휜색
+%			\usecolortheme{wolverine}	& 제목이 노란색
+%			\usecolortheme{beaver}
+
+		%	---------------------------------------------------------	
+		%	Inner Color Theme 			내부 색 테마 ( 블록의 색 )
+		%	---------------------------------------------------------	
+
+%			\usecolortheme{rose}		% 흰색
+%			\usecolortheme{lily}		% 색 안 칠한다
+%			\usecolortheme{orchid} 	% 진하게
+
+		%	---------------------------------------------------------	
+		%	Outter Color Theme 		외부 색 테마 ( 머리말, 고리말, 사이드바 )
+		%	---------------------------------------------------------	
+
+%			\usecolortheme{whale}		% 진하다
+%			\usecolortheme{dolphin}	% 중간
+%			\usecolortheme{seahorse}	% 연하다
+
+		%	---------------------------------------------------------	
+		%	Font Theme 				폰트 테마
+		%	---------------------------------------------------------	
+%			\usfonttheme{default}		
+			\usefonttheme{serif}			
+%			\usefonttheme{structurebold}			
+%			\usefonttheme{structureitalicserif}			
+%			\usefonttheme{structuresmallcapsserif}			
+
+
+
+		%	---------------------------------------------------------	
+		%	Inner Theme 				
+		%	---------------------------------------------------------	
+
+%			\useinnertheme{default}
+			\useinnertheme{circles}		% 원문자			
+%			\useinnertheme{rectangles}		% 사각문자			
+%			\useinnertheme{rounded}			% 깨어짐
+%			\useinnertheme{inmargin}			
+
+
+
+
+		%	---------------------------------------------------------	
+		%	이동 단추 삭제
+		%	---------------------------------------------------------	
+%			\setbeamertemplate{navigation symbols}{}
+
+		%	---------------------------------------------------------	
+		%	문서 정보 표시 꼬리말 적용
+		%	---------------------------------------------------------	
+%			\useoutertheme{infolines}
+
+
+			
+	%	---------------------------------------------------------- 	배경이미지 지정
+%			\pgfdeclareimage[width=\paperwidth,height=\paperheight]{bgimage}{./fig/Chrysanthemum.jpg}
+%			\setbeamertemplate{background canvas}{\pgfuseimage{bgimage}}
+
+		%	---------------------------------------------------------	
+		% 	본문 글꼴색 지정
+		%	---------------------------------------------------------	
+%			\setbeamercolor{normal text}{fg=purple}
+%			\setbeamercolor{normal text}{fg=red!80}	% 숫자는 투명도 표시
+
+
+		%	---------------------------------------------------------	
+		%	itemize 모양 설정
+		%	---------------------------------------------------------	
+%			\setbeamertemplate{items}[ball]
+%			\setbeamertemplate{items}[circle]
+%			\setbeamertemplate{items}[rectangle]
+
+
+
+
+
+
+		\setbeamercovered{dynamic}
+
+
+
+
+
+		% --------------------------------- 	문서 기본 사항 설정
+		\setcounter{secnumdepth}{5} 		% 문단 번호 깊이
+		\setcounter{tocdepth}{5} 			% 문단 번호 깊이
+
+
+
+
+% ------------------------------------------------------------------------------
+% Begin document (Content goes below)
+% ------------------------------------------------------------------------------
+	\begin{document}
+	
+
+			\title{찬 불 가}
+
+			\author{김대희}
+
+			\date{2020년 07월 12일}
+
+
+	%	==========================================================
+	%		개정 이력
+	%	----------------------------------------------------------
+	%		2020.07.12 첫 작성
+	%	----------------------------------------------------------
+	%	
+	%	----------------------------------------------------------
+
+
+	%	==========================================================
+	%
+	%	----------------------------------------------------------
+		\begin{frame}[plain]
+		\titlepage
+		\end{frame}
+
+
+
+%		\begin{frame} [plain]{목차}
+		\begin{frame} {목차}
+		\tableofcontents
+		\end{frame}
+		
+
+	%	========================================================== 	개요
+	%		Frame
+	%	----------------------------------------------------------
+		\part{개요}
+		\frame{\partpage}
+
+
+		\begin{frame} [plain]{목차}
+		\tableofcontents
+		\end{frame}
+		
+
+		
+				
+		
+	%	 ---------------------------------------------------------- 삼귀의 }
+	%	 Frame
+	%	 ----------------------------------------------------------
+		\section{ 삼귀의 }
+%		\frame [plain] {\sectionpage}
+		
+
+		\begin{frame} [t,plain]
+			\begin{block} { 삼귀의 }
+
+			\setlength{\leftmargini}{2em}			
+			\begin{itemize}
+				\item 작사
+				\item 작곡 최영철
+
+				\item 거룩한 부처님께 귀의합니다.
+				\item 거룩한 가르침에 귀의합니다.
+				\item 거룩한 스님들께 귀의합니다.
+			\end{itemize}
+			
+			\end{block}
+		\end{frame} 	%	 --------------------------------------------
+
+		
+
+	%	 ---------------------------------------------------------- 보현행원 }
+	%	 Frame
+	%	 ----------------------------------------------------------
+		\section{ 보현행원 }
+%		\frame [plain] {\sectionpage}
+		
+
+		\begin{frame} [t,plain]
+			\begin{block} { 보현행원 1}
+
+			\setlength{\leftmargini}{2em}			
+			\begin{itemize}
+				\item 작사
+				\item 작곡
+				\item . 내 이제 두 손-모아 청하옵나-니
+시방세계 부처-님 우주 대-광-명
+두 눈 어둔 이내몸 굽어 살피-사
+위없는 대법-문을 널리 여-소-서
+
+				\item 허공계와 중생-계가 다 할지라-도
+오늘-세운 이-서원은 끝없아-오-리
+
+			\end{itemize}
+			
+			\end{block}
+
+		\end{frame} 	%	 --------------------------------------------
+
+
+		\begin{frame} [t,plain]
+			\begin{block} { 보현행원 2}
+
+			\setlength{\leftmargini}{2em}			
+			\begin{itemize}
+				\item  내 이제 엎드-려서 원하옵나-니
+영겁토록 열반-에 들지 맙-시-고
+이 세상에 중생을 굽어 살피-사
+삼계화택 심한-고난 구원 하-소-서
+
+				\item 허공계와 중생-계가 다 할지라-도
+오늘-세운 이-서원은 끝없아-오-리
+			\end{itemize}
+			
+			\end{block}
+
+		\end{frame} 	%	 --------------------------------------------
+		
+
+	%	 ---------------------------------------------------------- 청법가 }
+	%	 Frame
+	%	 ----------------------------------------------------------
+		\section{ 청법가 }
+%		\frame [plain] {\sectionpage}
+		
+
+		\begin{frame} [t,plain]
+			\begin{block} { 청법가 }
+
+			\setlength{\leftmargini}{2em}			
+			\begin{itemize}
+				\item 작사  이광수 정운문
+				\item 작곡  이찬우
+
+				\item 덕높-으신 스-승님 사자-좌에 오르사-
+				\item    사자-후를 합-소서 감로-법을 주-소서
+				\item    옛인연을 이어서 새인연을 맺-도록
+				\item    대자-비를 베-푸사 법을- 설하옵-소서
+			\end{itemize}
+			
+			\end{block}
+		\end{frame} 	%	 --------------------------------------------
+
+
+
+
+	%	 ---------------------------------------------------------- 사홍서원 }
+	%	 Frame
+	%	 ----------------------------------------------------------
+		\section{ 사홍서원 }
+%		\frame [plain] {\sectionpage}
+		
+
+		\begin{frame} [t,plain]
+			\begin{block} { 사홍서원 }
+
+			\setlength{\leftmargini}{2em}			
+			\begin{itemize}
+				\item 작사
+				\item 작곡  최영철
+
+				\item   중생을 다 건지오리다
+				\item    번뇌를 다 끊으오리다
+				\item    법문을 다 배우오리다
+				\item    불도를 다 이루오리다
+			\end{itemize}
+			
+			\end{block}
+		\end{frame} 	%	 --------------------------------------------
+
+“중생무변서원도(衆生無邊誓願度) 
+번뇌무진서원단(煩惱無盡誓願斷) 
+법문무량서원학(法門無量誓願學) 
+불도무상서원성(佛道無上誓願成)”이다.
+
+\newpage
+
+	%	========================================================== 함께 읽어볼 자료
+		\part{ 함께 읽어볼 자료 }
+		\frame{\partpage}
+		
+		\begin{frame} [plain]{목차}
+		\tableofcontents%
+		\end{frame}
+
+
+
+
+	%	---------------------------------------------------------- 작곡가 }
+	%		Frame
+	%	----------------------------------------------------------
+		\section{ 작곡가 }
+		\begin{frame} [t,plain]
+		\frametitle{작곡가 }
+			\begin{block} { 작곡가 }
+			\setlength{\leftmargini}{4em}			
+			\begin{itemize}
+				\item 
+				\item 
+				\item 
+				\item 
+			\end{itemize}
+			\end{block}						
+								
+		\end{frame} 	%	 --------------------------------------------
+
+
+	%	---------------------------------------------------------- 작사가 }
+	%		Frame
+	%	----------------------------------------------------------
+		\section{ 작사가 }
+		\begin{frame} [t,plain]
+		\frametitle{작사가 }
+			\begin{block} { 작사가 }
+			\setlength{\leftmargini}{4em}			
+			\begin{itemize}
+				\item 
+				\item 
+				\item 
+				\item 
+			\end{itemize}
+			\end{block}						
+								
+		\end{frame} 	%	 --------------------------------------------
+
+
+	%	---------------------------------------------------------- 합창단 }
+	%		Frame
+	%	----------------------------------------------------------
+		\section{ 합창단 }
+		\begin{frame} [t,plain]
+		\frametitle{합창단 }
+			\begin{block} { 합창단 }
+			\setlength{\leftmargini}{4em}			
+			\begin{itemize}
+				\item 
+				\item 
+				\item 
+				\item 
+			\end{itemize}
+			\end{block}						
+								
+		\end{frame} 	%	 --------------------------------------------
+
+
+% ------------------------------------------------------------------------------ ------------------------------------------------------------------------------ ------------------------------------------------------------------------------
+% End document
+% ------------------------------------------------------------------------------ ------------------------------------------------------------------------------ ------------------------------------------------------------------------------
+\end{document}
+
+
+	%	----------------------------------------------------------
+	%		Frame
+	%	----------------------------------------------------------
+		\begin{frame} [c]
+%		\begin{frame} [b]
+%		\begin{frame} [t]
+		\frametitle{감리 보고서}
+		\end{frame}						
+
